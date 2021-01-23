@@ -14,9 +14,9 @@ The features in the data set are as follows:
        'worst compactness', 'worst concavity', 'worst concave points',
        'worst symmetry', 'worst fractal dimension'
  
-Our Classification Analysis kernel consists of 7 steps:
+Our classification analysis consists of 7 steps:
 
-### Step 0 (dubbed Step 0 in our house because it is a preparatory step) - Import the Libraries:
+### Step 0 (dubbed so because it is a preparatory step) - Import the Libraries:
 in addition to the scikit-learn library whhich we use to perform the classification analysis, we also use several other packages and modules:
 
 - **Pandas**:used for data structures and operations for manipulating numerical tables
