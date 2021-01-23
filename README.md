@@ -1,6 +1,6 @@
 # Breast Cancer Classifier
 
-The objective of this kernel is to create a classification model which classifies tumors into benign and malignant based on 30 features. The data set is included in the scikit-learn library under the model "load_breast_cancer".
+The objective of this kernel is to create a classification model which classifies tumors into benign and malignant based on 30 features. The data set is included in the scikit-learn library under the module "load_breast_cancer".
 
 The features in the data set are as follows:
        'mean radius', 'mean texture', 'mean perimeter', 'mean area',
@@ -14,7 +14,7 @@ The features in the data set are as follows:
        'worst compactness', 'worst concavity', 'worst concave points',
        'worst symmetry', 'worst fractal dimension'
  
-Our Classification Analysis Kernel consists of 7 steps:
+Our Classification Analysis kernel consists of 7 steps:
 
 ### Step 0 (dubbed Step 0 in our house because it is a preparatory step) - Import the Libraries:
 in addition to the scikit-learn library whhich we use to perform the classification analysis, we also use several other packages and modules:
@@ -23,7 +23,7 @@ in addition to the scikit-learn library whhich we use to perform the classificat
 -**Numpy**: used for numerical analysis
 -**matplotlib.pyplot**: used for plotting data
 -**seaborn**: used for data visualization (used on top of matplotlib library)
--**sklearn**: used in our kernel for three purposes: to split data into training and testing sets, to import metrics such as mean squared error to assess regression analysis, and to scale the data
+-**sklearn**: used in our kernel to split the set into a training and a testing set, to create the model, to perform grid search to find the best hyper parameters, and to visualize the results.
 
 ### Step 1 - Import the Dataset:
 We imported the data from the sklearn library, and we load it into a pandas DataFrame object.
@@ -38,7 +38,7 @@ In this step we checked our data for null values using a heatmap from seaborn as
 We also check if there is any correlation between the variables and we explore the dataset to get a feel of it.
 
 ### Step 3 - Create Training and Testing Set: 
-In this step we scale the data using sklearn’s MinMaxScaler, and we split our data set into a training and testing sets. We use 20% for testing the regressor:
+We split our data set into a training and testing sets. We use 20% for testing the classifier:
 
 - **X_train**: Contains the independent variables used for training
 - **y_train**: Contains the dependent variables used for training
