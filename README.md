@@ -26,12 +26,12 @@ in addition to the scikit-learn library whhich we use to perform the classificat
 -**sklearn**: used in our kernel to split the set into a training and a testing set, to create the model, to perform grid search to find the best hyper parameters, and to visualize the results.
 
 ### Step 1 - Import the Dataset:
-We imported the data from the sklearn library, and we load it into a pandas DataFrame object.
+We import the data from the sklearn library, and we load it into a pandas DataFrame object.
 The column names are also included in the data. The keys of the data can be seen using the keys method:
 ```data_set.keys()```
 
 ### Step 2 - Visualize Data:
-In this step we checked our data for null values using a heatmap from seaborn as follows:
+We check our data for null values using a heatmap from seaborn as follows:
 ```sns.heatmap(df.isnull(), yticklabels = False, cbar = False, cmap="Blues")```
 ![Heatmap to visualize Null Values](breast_null.png)
 
