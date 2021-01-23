@@ -1,4 +1,4 @@
-# Breast-Cancer-Classifier
+# Breast Cancer Classifier
 
 The objective of this kernel is to create a classification model which classifies tumors into benign and malignant based on 30 features. The data set is included in the scikit-learn library under the model "load_breast_cancer".
 
